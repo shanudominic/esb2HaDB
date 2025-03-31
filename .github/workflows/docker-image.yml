@@ -15,6 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4          
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag hub.docker.com/edomsha/esb2hadb:latest
+      run: docker build . --file Dockerfile --tag registry-1.docker.io/edomsha/esb2hadb:latest
     - name: push docker image
-      run: docker push hub.docker.com/edomsha/esb2hadb:latest
+      run: docker push registry-1.docker.io/edomsha/esb2hadb:latest
